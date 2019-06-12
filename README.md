@@ -11,6 +11,7 @@
         - Research Output
         - Total Students
         - Total Faculty 
+        - Link to homepage of University
         - Overview(Complete Paragraph)
         - Location including(Pin Code, Locality, State, Country)
         
