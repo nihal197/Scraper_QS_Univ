@@ -4,6 +4,7 @@
 - [x] **Shows the universities according to region or country by choice**
 - [x] **Googles the University name in new tab and gives the link to homepage**
 - [x] **Gives the basic details of the university selected**
+
         1. Rank
         2. Average_Fess
         3. Status
@@ -12,4 +13,5 @@
         6. Total Faculty 
         7. Overview(Complete Paragraph)
         8. Location including(Pin Code, Locality, State, Country)
+        
 - [ ] **Searching university by name**
