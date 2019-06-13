@@ -44,13 +44,10 @@ scr_all.click()
 #SCROLLING BACK TO UP TO FETCH THE REGION WISE RESULT
 scroll_fun(500)
 
-#Standard Function for search
+#SEACHING THE UNI BY NAME
+uni_name=input('Enter university name: ')
+uni_search_by_name(uni_name)
 
-def uni_search_by_name(uni_name):
-    uni_search=browser.find_element_by_xpath('//*[@id="qs-rankings"]/thead/tr[3]/td[2]/div/input')
-    uni_name=input('Enter_uni_name: ')
-    uni_search.send_keys(uni_name)
-     
 #GET THE UNIVERSITIES
 uni= get_uni()
 
