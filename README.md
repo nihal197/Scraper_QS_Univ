@@ -1,5 +1,4 @@
 # QS World Ranking Scraper
-## Under_Process
 
 - [x] **Shows the universities according to region or country by choice**
 - [x] **Googles the University name in new tab and gives the link to homepage**
@@ -15,4 +14,4 @@
         - Overview(Complete Paragraph)
         - Location including(Pin Code, Locality, State, Country)
         
-- [ ] **Searching university by name**
+- [x] **Searching university by name**
