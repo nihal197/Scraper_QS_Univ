@@ -20,10 +20,14 @@ def input_region(region):
             break
 
 #HOVER FUNCTION
-def hover(element_to_hover_over):
+def hover_over(element_to_hover_over):
     hover = ActionChains(browser).move_to_element(element_to_hover_over)
     hover.perform()
     
+
+#SCROLL BY Y PIX
+    def scroll_fun(y):
+        browser.execute_script("window.scrollTo(0,{})".format(y))
     
 #PRINTING THE TEXT 
     def sel_print_region(obj_ls):
@@ -86,7 +90,9 @@ def fetch_para():
     para_str=''
     more = browser.find_elements_by_class_name('more-link')
     if len(more)>0:
-        more.click()
+        hover_over(more[0])
+        scroll_fun(400)
+        more[0].click()
         para= browser.find_elements_by_class_name('field-profile-overview')
         list_paras = para[1].find_elements_by_tag_name('p')
         for i in range(len(list_paras)-1):
@@ -140,5 +146,10 @@ def google_the_link(uni_name):
     link = sag[0].find_element_by_tag_name('a').get_attribute('href')
     return link
 
+
+#SEACHING BY NAME
+def uni_search_by_name(uni_name):
+    uni_search=browser.find_element_by_xpath('//*[@id="qs-rankings"]/thead/tr[3]/td[2]/div/input')
+    uni_search.send_keys(uni_name)
 
 
